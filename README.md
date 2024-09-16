@@ -7,6 +7,7 @@ Verilog Code for 4:1 mux:
 // 17-09-2024 00:05:40
 // example
 
+
 module example ( A, B, S, R, Q, P, out1); input A, B, S, R, Q, P;
 output outl;
 wire w5, w6, w7, w8, w9, w10,wll,w12;
@@ -22,6 +23,8 @@ and # (2) and3_8 (w9, R, A, w6);
 and # (2) and3_9 (w10,S,A,B);
 endmodule
 
+
+
 // Simulation parameters in Verilog Format
 always
 #200 A=~A;
@@ -30,6 +33,8 @@ always
 #1600 R=~R;
 #3200 Q=~Q;
 #6400 P=~P;
+
+
 
 // Simulation parameters
 // A CLK 1 1
